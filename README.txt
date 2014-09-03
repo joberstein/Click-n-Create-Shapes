@@ -29,7 +29,7 @@ Instructions for running Project 2:
 
 Problems that came up during the process:
 	•	Getting the user-created shapes to become PShapes.
-	•	I had an epic battle with mousePressed because I tried to use it as a counter, but ultimately
+	•	I struggled with getting mousePressed variable to work because I tried to use it as a counter, but I ultimately
 	triumphed by incrementing the counter of mouse clicks in the mouseClicked() method.
 	Problems that I had because of only using the mousePressed variable:
 	⁃	Only some of the time, new shapes were created from the last vertex of the previous shape when the "s" key is used to close a shape.  New shapes are meant to be created independently from other shapes, and should not be tied to them in any way. 
