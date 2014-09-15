@@ -1,7 +1,6 @@
 /* 
 Jesse Oberstein
-Project 2 - Click 'n Create Shapes
-IM 2250 - Programming for Digital Media
+Click 'n Create Shapes
 */
 
 String instructions = "Click on the button below to get started!";
