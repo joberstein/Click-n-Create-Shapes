@@ -1,4 +1,4 @@
 Click n' Create Shapes
 =======================
 
-A simple clicking game that fills in created shapes after connecting the dots.
+A simple clicking game that colors in user-defined shapes, where clicks become vertices.
