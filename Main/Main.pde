@@ -53,7 +53,7 @@ boolean closed = fpn.isClosed();
 
 
 void setup() {
-  size(1000, 720);
+  size(1000, 720, P2D);
   appcas = loadFont("AppleCasual-48.vlw");
   arrow = loadShape("Arrow.svg");
   displayStartPage();
