@@ -1,10 +1,7 @@
-Project 2 READ ME
+Click n' Create Shapes - READ ME
 Jesse Oberstein
-IM 2250 Programming for Digital Media
-WF 11:45am - 1:25pm
 
-
-Instructions for running Project 2:
+Instructions for running Click n' Create Shapes:
 
 	- NOTE 1: Since Processing only supports createShape() in P2D, the PShape “arrow”, is distorted, and the button-click area doesn’t completely envelope the image.
 	- DURATION: As long as the user would like the program to last.
