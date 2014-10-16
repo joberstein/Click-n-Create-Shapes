@@ -6,12 +6,8 @@ A simple clicking game that colors in user-defined shapes, where clicks become v
 <br>
 Project Information
 --------------------------------------------------------------------------------
-  - Version 1.0 on March 28th, 2014
+  - Version 1.0 on February 12th, 2014
   - Created by Jesse Oberstein
-  - Resources:
-  	* All images taken from GoogleImages.
-	* Audio files taken from www.gendou.com for personal use
-	* Minim library included in Processing download. Link to Minim’s website: http://code.compartmental.net/tools/minim/
   - Individual Project
 
 
