@@ -1,33 +1,41 @@
+import processing.core.PApplet;
+import processing.core.PVector;
+
 // A non-empty list of vectors.
 public class FunPoint extends LoVec {
   private PVector loc;
   private LoVec rest;
 
-  FunPoint(PVector loc, LoVec rest) {
+  FunPoint(PApplet parent, PVector loc, LoVec rest) {
+    super(parent);
     this.loc = loc;
     this.rest = rest;
   }
 
   // Creates an empty LoVec.
   public LoVec empty() {
-    return new EmptyLoVec();
+    return new EmptyLoVec(this.parent);
   }
 
   // Add the given location to this list of vectors.
   public LoVec add(PVector v) {
-    return new FunPoint(v, this);
+    return new FunPoint(this.parent, v, this);
   }
 
   // Draws a line between this vector and the given vector.
   public void drawLines(PVector v) {
-    stroke(0);
-    line(this.loc.x, this.loc.y, v.x, v.y);
+    this.parent.stroke(0);
+    this.parent.line(this.loc.x, this.loc.y, v.x, v.y);
   }
 
   // Draws a randomly colored line between this vector and the given vector.
   public void drawColorLines(PVector v) {
-    stroke(random(0, 255), random(0, 255), random(0, 255));
-    line(this.loc.x, this.loc.y, v.x, v.y);
+    this.parent.stroke(getRandomRgbValue(), getRandomRgbValue(), getRandomRgbValue());
+    this.parent.line(this.loc.x, this.loc.y, v.x, v.y);
+  }
+
+  private float getRandomRgbValue() {
+    return this.parent.random(0, 255);
   }
 
   // Is this List of Vectors empty?
@@ -72,8 +80,8 @@ public class FunPoint extends LoVec {
 
   // Displays the points.
   public void display() {
-    fill(0);
-    ellipse(this.loc.x, this.loc.y, 5, 5);
+    this.parent.fill(0);
+    this.parent.ellipse(this.loc.x, this.loc.y, 5, 5);
     this.rest.display();
   }
 }

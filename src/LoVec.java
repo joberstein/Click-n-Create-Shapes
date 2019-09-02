@@ -1,6 +1,12 @@
+import processing.core.PApplet;
+import processing.core.PVector;
+
 // A list of vectors.
 public abstract class LoVec {
-  LoVec() {
+  protected PApplet parent;
+
+  LoVec(PApplet parent) {
+    this.parent = parent;
   }
 
   // Creates an empty LoVec.

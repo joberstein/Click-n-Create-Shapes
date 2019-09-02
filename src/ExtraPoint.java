@@ -1,7 +1,12 @@
+import processing.core.PApplet;
+import processing.core.PVector;
+
 // An extra type of FunPoint that has different properties depending on the key pressed.
 public abstract class ExtraPoint {
+  protected PApplet parent;
 
-  ExtraPoint() {
+  ExtraPoint(PApplet parent) {
+    this.parent = parent;
   }
 
   // Add the given location to this list of vectors.
